@@ -1,0 +1,12 @@
+- description: "Traduzindo uma frase."
+  vars:
+    eventName: programação
+    companyName: RD Station
+    joke: programador
+    clothingName: Máscaras
+    experienceAge: 3
+    award: R$ 1.500,00
+    donation: 15
+  assert:
+    - type: icontains-any
+      value: ["convidar", "Desafio de Programação", "colaboradores", "doar"]

@@ -1,0 +1,303 @@
+{
+  "results": {
+    "version": 2,
+    "results": [
+      {
+        "provider": {
+          "id": "openai:gpt-4-1106-preview"
+        },
+        "prompt": {
+          "raw": "Gere um e-mail informal para convocação de colaboradores da empresa RD Station a participarem de um evento sobre programação.\n\nO e-mail deve conter os seguintes detalhes:\n\nSó serão aceitos colaboradores com o mínino de 3 anos de experiência.\nÉ obrigatório que venham vestidos de Máscaras para manter o anonimato.\nO vancedor além de receber um prêmio de R$ 1.500,00, deverá fazer uma doação de 15 porcento do total recebido.\n\nEscreva uma piada sobre programador no final da mensagem.",
+          "display": "[openai:gpt-4-1106-preview] Gere um e-mail informal para convocação de colaboradores da empresa {{companyName}} a participarem de um evento sobre {{eventName}}.\n\nO e-mail deve conter os seguintes detalhes:\n\nSó serão aceitos colaboradores com o mínino de {{experienceAge}} anos de experiência.\nÉ obrigatório que venham vestidos de {{clothingName}} para manter o anonimato.\nO vancedor além de receber um prêmio de {{award}}, deverá fazer uma doação de {{donation}} porcento do total recebido.\n\nEscreva uma piada sobre {{joke}} no final da mensagem."
+        },
+        "vars": {
+          "system_message": "email/system_prompt.txt",
+          "eventName": "programação",
+          "companyName": "RD Station",
+          "joke": "programador",
+          "clothingName": "Máscaras",
+          "experienceAge": 3,
+          "award": "R$ 1.500,00",
+          "donation": 15
+        },
+        "response": {
+          "output": "Assunto: Convite Especial para o Desafio de Programação RD Station – Máscaras e Mistérios!\n\nOlá, Time RD!\n\nEspero que este e-mail os encontre mergulhados em códigos e inovações, como de costume. 😄\n\nEstou super animado para convidar todos vocês para um evento exclusivo que estamos organizando – o Desafio de Programação RD Station: Máscaras e Mistérios! 🎭💻\n\nAqui estão os detalhes que vocês precisam saber:\n\n- **Experiência Importante**: Estamos buscando os mestres do código! Por isso, só poderão participar colaboradores que tenham pelo menos 3 anos de experiência tecendo a teia da programação. É a hora de mostrar o poder da experiência!\n\n- **Máscaras Obrigatórias**: Para adicionar um toque de suspense e diversão, todos os participantes deverão usar máscaras durante o evento. Queremos ver a criatividade de vocês não só no código, mas também no disfarce!\n\n- **Prêmio com Coração**: O vencedor levará para casa um prêmio de R$ 1.500,00! Mas não é só isso – como parte da nossa cultura de dar back à comunidade, o campeão também terá a honra de doar 15% do prêmio para uma causa nobre de sua escolha. Ganhar e ajudar, não tem coisa melhor!\n\nEntão, se você tem a experiência e a vontade de participar de um desafio que testará suas habilidades e ainda por cima contribuir para uma boa causa, não perca tempo! Vista sua máscara e venha se juntar a nós nessa aventura de programação!\n\nPor favor, confirmem sua participação até o final da semana para que possamos organizar tudo com perfeição.\n\nE agora, para descontrair um pouco antes de voltarmos aos nossos códigos:\n\nVocê sabe por que o programador foi ao psicólogo? Porque ele estava em um loop infinito de problemas e não conseguia se desbugar sozinho! 😂\n\nEsperamos ver todos vocês lá, prontos para codar e rir um pouco também!\n\nAbraços codificados,\n[Seu Nome]\nEquipe de Eventos RD Station",
+          "tokenUsage": {
+            "cached": 664,
+            "total": 664
+          },
+          "cached": true
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 5,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "namedScores": {},
+          "reason": "All assertions passed",
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "icontains-any",
+                "value": [
+                  "convidar",
+                  "Desafio de Programação",
+                  "colaboradores",
+                  "doar"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:gpt-3.5-turbo-1106"
+        },
+        "prompt": {
+          "raw": "Gere um e-mail informal para convocação de colaboradores da empresa RD Station a participarem de um evento sobre programação.\n\nO e-mail deve conter os seguintes detalhes:\n\nSó serão aceitos colaboradores com o mínino de 3 anos de experiência.\nÉ obrigatório que venham vestidos de Máscaras para manter o anonimato.\nO vancedor além de receber um prêmio de R$ 1.500,00, deverá fazer uma doação de 15 porcento do total recebido.\n\nEscreva uma piada sobre programador no final da mensagem.",
+          "display": "[openai:gpt-3.5-turbo-1106] Gere um e-mail informal para convocação de colaboradores da empresa {{companyName}} a participarem de um evento sobre {{eventName}}.\n\nO e-mail deve conter os seguintes detalhes:\n\nSó serão aceitos colaboradores com o mínino de {{experienceAge}} anos de experiência.\nÉ obrigatório que venham vestidos de {{clothingName}} para manter o anonimato.\nO vancedor além de receber um prêmio de {{award}}, deverá fazer uma doação de {{donation}} porcento do total recebido.\n\nEscreva uma piada sobre {{joke}} no final da mensagem."
+        },
+        "vars": {
+          "system_message": "email/system_prompt.txt",
+          "eventName": "programação",
+          "companyName": "RD Station",
+          "joke": "programador",
+          "clothingName": "Máscaras",
+          "experienceAge": 3,
+          "award": "R$ 1.500,00",
+          "donation": 15
+        },
+        "response": {
+          "output": "Assunto: Convocação para evento de programação\n\nOlá equipe,\n\nEstamos convocando todos os colaboradores da RD Station com no mínimo 3 anos de experiência em programação para participarem de um evento especial que irá acontecer no próximo mês. O evento terá como tema a inovação e as últimas tendências em programação, e será uma ótima oportunidade para trocar conhecimentos e se atualizar sobre as novidades da área.\n\nAlém disso, gostaríamos de lembrar que é obrigatório que todos os participantes venham vestidos de máscaras para manter o anonimato durante as atividades do evento.\n\nE para deixar as coisas ainda mais interessantes, teremos um prêmio de R$ 1.500,00 para o vencedor do desafio de programação. No entanto, o vencedor também deverá fazer uma doação de 15% do valor recebido para uma instituição de caridade.\n\nAgora, para animar um pouco o dia, aqui vai uma piada sobre programador:\n\nPor que o programador não consegue sair de casa?\n\nPorque ele está sempre preso no loop!\n\nEsperamos contar com a presença de todos vocês neste evento. Fiquem atentos para mais informações em breve.\n\nAtenciosamente,\n[Seu nome]",
+          "tokenUsage": {
+            "cached": 437,
+            "total": 437
+          },
+          "cached": true
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 7,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "namedScores": {},
+          "reason": "All assertions passed",
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "icontains-any",
+                "value": [
+                  "convidar",
+                  "Desafio de Programação",
+                  "colaboradores",
+                  "doar"
+                ]
+              }
+            }
+          ],
+          "assertion": null
+        }
+      }
+    ],
+    "stats": {
+      "successes": 2,
+      "failures": 0,
+      "tokenUsage": {
+        "total": 1101,
+        "prompt": 0,
+        "completion": 0,
+        "cached": 1101
+      }
+    },
+    "table": {
+      "head": {
+        "prompts": [
+          {
+            "raw": "Gere um e-mail informal para convocação de colaboradores da empresa {{companyName}} a participarem de um evento sobre {{eventName}}.\n\nO e-mail deve conter os seguintes detalhes:\n\nSó serão aceitos colaboradores com o mínino de {{experienceAge}} anos de experiência.\nÉ obrigatório que venham vestidos de {{clothingName}} para manter o anonimato.\nO vancedor além de receber um prêmio de {{award}}, deverá fazer uma doação de {{donation}} porcento do total recebido.\n\nEscreva uma piada sobre {{joke}} no final da mensagem.",
+            "display": "[openai:gpt-4-1106-preview] Gere um e-mail informal para convocação de colaboradores da empresa {{companyName}} a participarem de um evento sobre {{eventName}}.\n\nO e-mail deve conter os seguintes detalhes:\n\nSó serão aceitos colaboradores com o mínino de {{experienceAge}} anos de experiência.\nÉ obrigatório que venham vestidos de {{clothingName}} para manter o anonimato.\nO vancedor além de receber um prêmio de {{award}}, deverá fazer uma doação de {{donation}} porcento do total recebido.\n\nEscreva uma piada sobre {{joke}} no final da mensagem.",
+            "id": "c46c373887ae74917db161a9181240a6e1f38073a3b514431abfdde1daa30c9e",
+            "metrics": {
+              "score": 1,
+              "testPassCount": 1,
+              "testFailCount": 0,
+              "assertPassCount": 1,
+              "assertFailCount": 0,
+              "totalLatencyMs": 5,
+              "tokenUsage": {
+                "total": 664,
+                "prompt": 0,
+                "completion": 0,
+                "cached": 664
+              },
+              "namedScores": {}
+            }
+          },
+          {
+            "raw": "Gere um e-mail informal para convocação de colaboradores da empresa {{companyName}} a participarem de um evento sobre {{eventName}}.\n\nO e-mail deve conter os seguintes detalhes:\n\nSó serão aceitos colaboradores com o mínino de {{experienceAge}} anos de experiência.\nÉ obrigatório que venham vestidos de {{clothingName}} para manter o anonimato.\nO vancedor além de receber um prêmio de {{award}}, deverá fazer uma doação de {{donation}} porcento do total recebido.\n\nEscreva uma piada sobre {{joke}} no final da mensagem.",
+            "display": "[openai:gpt-3.5-turbo-1106] Gere um e-mail informal para convocação de colaboradores da empresa {{companyName}} a participarem de um evento sobre {{eventName}}.\n\nO e-mail deve conter os seguintes detalhes:\n\nSó serão aceitos colaboradores com o mínino de {{experienceAge}} anos de experiência.\nÉ obrigatório que venham vestidos de {{clothingName}} para manter o anonimato.\nO vancedor além de receber um prêmio de {{award}}, deverá fazer uma doação de {{donation}} porcento do total recebido.\n\nEscreva uma piada sobre {{joke}} no final da mensagem.",
+            "id": "c46c373887ae74917db161a9181240a6e1f38073a3b514431abfdde1daa30c9e",
+            "metrics": {
+              "score": 1,
+              "testPassCount": 1,
+              "testFailCount": 0,
+              "assertPassCount": 1,
+              "assertFailCount": 0,
+              "totalLatencyMs": 7,
+              "tokenUsage": {
+                "total": 437,
+                "prompt": 0,
+                "completion": 0,
+                "cached": 437
+              },
+              "namedScores": {}
+            }
+          }
+        ],
+        "vars": [
+          "award",
+          "clothingName",
+          "companyName",
+          "donation",
+          "eventName",
+          "experienceAge",
+          "joke"
+        ]
+      },
+      "body": [
+        {
+          "description": "Traduzindo uma frase.",
+          "outputs": [
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "Assunto: Convite Especial para o Desafio de Programação RD Station – Máscaras e Mistérios!\n\nOlá, Time RD!\n\nEspero que este e-mail os encontre mergulhados em códigos e inovações, como de costume. 😄\n\nEstou super animado para convidar todos vocês para um evento exclusivo que estamos organizando – o Desafio de Programação RD Station: Máscaras e Mistérios! 🎭💻\n\nAqui estão os detalhes que vocês precisam saber:\n\n- **Experiência Importante**: Estamos buscando os mestres do código! Por isso, só poderão participar colaboradores que tenham pelo menos 3 anos de experiência tecendo a teia da programação. É a hora de mostrar o poder da experiência!\n\n- **Máscaras Obrigatórias**: Para adicionar um toque de suspense e diversão, todos os participantes deverão usar máscaras durante o evento. Queremos ver a criatividade de vocês não só no código, mas também no disfarce!\n\n- **Prêmio com Coração**: O vencedor levará para casa um prêmio de R$ 1.500,00! Mas não é só isso – como parte da nossa cultura de dar back à comunidade, o campeão também terá a honra de doar 15% do prêmio para uma causa nobre de sua escolha. Ganhar e ajudar, não tem coisa melhor!\n\nEntão, se você tem a experiência e a vontade de participar de um desafio que testará suas habilidades e ainda por cima contribuir para uma boa causa, não perca tempo! Vista sua máscara e venha se juntar a nós nessa aventura de programação!\n\nPor favor, confirmem sua participação até o final da semana para que possamos organizar tudo com perfeição.\n\nE agora, para descontrair um pouco antes de voltarmos aos nossos códigos:\n\nVocê sabe por que o programador foi ao psicólogo? Porque ele estava em um loop infinito de problemas e não conseguia se desbugar sozinho! 😂\n\nEsperamos ver todos vocês lá, prontos para codar e rir um pouco também!\n\nAbraços codificados,\n[Seu Nome]\nEquipe de Eventos RD Station",
+              "prompt": "Gere um e-mail informal para convocação de colaboradores da empresa RD Station a participarem de um evento sobre programação.\n\nO e-mail deve conter os seguintes detalhes:\n\nSó serão aceitos colaboradores com o mínino de 3 anos de experiência.\nÉ obrigatório que venham vestidos de Máscaras para manter o anonimato.\nO vancedor além de receber um prêmio de R$ 1.500,00, deverá fazer uma doação de 15 porcento do total recebido.\n\nEscreva uma piada sobre programador no final da mensagem.",
+              "provider": "openai:gpt-4-1106-preview",
+              "latencyMs": 5,
+              "tokenUsage": {
+                "cached": 664,
+                "total": 664
+              },
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "namedScores": {},
+                "reason": "All assertions passed",
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0
+                },
+                "componentResults": [
+                  {
+                    "pass": true,
+                    "score": 1,
+                    "reason": "Assertion passed",
+                    "assertion": {
+                      "type": "icontains-any",
+                      "value": [
+                        "convidar",
+                        "Desafio de Programação",
+                        "colaboradores",
+                        "doar"
+                      ]
+                    }
+                  }
+                ],
+                "assertion": null
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "Assunto: Convocação para evento de programação\n\nOlá equipe,\n\nEstamos convocando todos os colaboradores da RD Station com no mínimo 3 anos de experiência em programação para participarem de um evento especial que irá acontecer no próximo mês. O evento terá como tema a inovação e as últimas tendências em programação, e será uma ótima oportunidade para trocar conhecimentos e se atualizar sobre as novidades da área.\n\nAlém disso, gostaríamos de lembrar que é obrigatório que todos os participantes venham vestidos de máscaras para manter o anonimato durante as atividades do evento.\n\nE para deixar as coisas ainda mais interessantes, teremos um prêmio de R$ 1.500,00 para o vencedor do desafio de programação. No entanto, o vencedor também deverá fazer uma doação de 15% do valor recebido para uma instituição de caridade.\n\nAgora, para animar um pouco o dia, aqui vai uma piada sobre programador:\n\nPor que o programador não consegue sair de casa?\n\nPorque ele está sempre preso no loop!\n\nEsperamos contar com a presença de todos vocês neste evento. Fiquem atentos para mais informações em breve.\n\nAtenciosamente,\n[Seu nome]",
+              "prompt": "Gere um e-mail informal para convocação de colaboradores da empresa RD Station a participarem de um evento sobre programação.\n\nO e-mail deve conter os seguintes detalhes:\n\nSó serão aceitos colaboradores com o mínino de 3 anos de experiência.\nÉ obrigatório que venham vestidos de Máscaras para manter o anonimato.\nO vancedor além de receber um prêmio de R$ 1.500,00, deverá fazer uma doação de 15 porcento do total recebido.\n\nEscreva uma piada sobre programador no final da mensagem.",
+              "provider": "openai:gpt-3.5-turbo-1106",
+              "latencyMs": 7,
+              "tokenUsage": {
+                "cached": 437,
+                "total": 437
+              },
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "namedScores": {},
+                "reason": "All assertions passed",
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0
+                },
+                "componentResults": [
+                  {
+                    "pass": true,
+                    "score": 1,
+                    "reason": "Assertion passed",
+                    "assertion": {
+                      "type": "icontains-any",
+                      "value": [
+                        "convidar",
+                        "Desafio de Programação",
+                        "colaboradores",
+                        "doar"
+                      ]
+                    }
+                  }
+                ],
+                "assertion": null
+              }
+            }
+          ],
+          "vars": [
+            "R$ 1.500,00",
+            "Máscaras",
+            "RD Station",
+            "15",
+            "programação",
+            "3",
+            "programador"
+          ]
+        }
+      ]
+    }
+  },
+  "config": {
+    "prompts": "email/prompt.txt",
+    "providers": [
+      "openai:gpt-4-1106-preview",
+      "openai:gpt-3.5-turbo-1106"
+    ],
+    "tests": "email/test.yaml",
+    "sharing": true,
+    "defaultTest": {
+      "vars": {
+        "system_message": "email/system_prompt.txt"
+      }
+    }
+  },
+  "shareableUrl": null
+}

@@ -1,0 +1,7 @@
+- description: "Traduzindo uma frase."
+  vars:
+    toLanguage: Inglês
+    phrase: Olá mundo
+  assert:
+    - type: icontains-all
+      value: ["Hello", "world"]

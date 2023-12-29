@@ -1,0 +1,320 @@
+{
+  "version": 2,
+  "results": [
+    {
+      "provider": {
+        "id": "openai:gpt-4-1106-preview"
+      },
+      "prompt": {
+        "raw": "[{\"role\":\"system\",\"content\":\"Seja extremamente brincalhão e informal.\"},{\"role\":\"user\",\"content\":\"Rephrase this in French: Hello world\"}]",
+        "display": "[openai:gpt-4-1106-preview] [{\"role\":\"system\",\"content\":\"Seja extremamente brincalhão e informal.\"},{\"role\":\"user\",\"content\":\"Rephrase this in French: {{body}}\"}]"
+      },
+      "vars": {
+        "body": "Hello world"
+      },
+      "response": {
+        "output": "Salut, le monde !",
+        "tokenUsage": {
+          "total": 37,
+          "prompt": 31,
+          "completion": 6
+        },
+        "cached": false
+      },
+      "success": true,
+      "score": 1,
+      "namedScores": {},
+      "latencyMs": 1054,
+      "gradingResult": {
+        "pass": true,
+        "score": 1,
+        "reason": "No assertions",
+        "tokensUsed": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0
+        },
+        "assertion": null
+      }
+    },
+    {
+      "provider": {
+        "id": "openai:gpt-3.5-turbo"
+      },
+      "prompt": {
+        "raw": "[{\"role\":\"system\",\"content\":\"Seja extremamente brincalhão e informal.\"},{\"role\":\"user\",\"content\":\"Rephrase this in French: Hello world\"}]",
+        "display": "[openai:gpt-3.5-turbo] [{\"role\":\"system\",\"content\":\"Seja extremamente brincalhão e informal.\"},{\"role\":\"user\",\"content\":\"Rephrase this in French: {{body}}\"}]"
+      },
+      "vars": {
+        "body": "Hello world"
+      },
+      "response": {
+        "output": "Salut les potes du monde !",
+        "tokenUsage": {
+          "total": 39,
+          "prompt": 31,
+          "completion": 8
+        },
+        "cached": false
+      },
+      "success": true,
+      "score": 1,
+      "namedScores": {},
+      "latencyMs": 976,
+      "gradingResult": {
+        "pass": true,
+        "score": 1,
+        "reason": "No assertions",
+        "tokensUsed": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0
+        },
+        "assertion": null
+      }
+    },
+    {
+      "provider": {
+        "id": "openai:gpt-4-1106-preview"
+      },
+      "prompt": {
+        "raw": "[{\"role\":\"system\",\"content\":\"Seja extremamente brincalhão e informal.\"},{\"role\":\"user\",\"content\":\"Rephrase this in French: Hello world\"}]",
+        "display": "[openai:gpt-4-1106-preview] [{\"role\":\"system\",\"content\":\"Seja extremamente brincalhão e informal.\"},{\"role\":\"user\",\"content\":\"Rephrase this in French: {{body}}\"}]"
+      },
+      "vars": {
+        "body": "Hello world"
+      },
+      "response": {
+        "output": "Salut, le monde !",
+        "tokenUsage": {
+          "cached": 37,
+          "total": 37
+        },
+        "cached": true
+      },
+      "success": true,
+      "score": 1,
+      "namedScores": {},
+      "latencyMs": 3,
+      "gradingResult": {
+        "pass": true,
+        "score": 1,
+        "reason": "No assertions",
+        "tokensUsed": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0
+        },
+        "assertion": null
+      }
+    },
+    {
+      "provider": {
+        "id": "openai:gpt-3.5-turbo"
+      },
+      "prompt": {
+        "raw": "[{\"role\":\"system\",\"content\":\"Seja extremamente brincalhão e informal.\"},{\"role\":\"user\",\"content\":\"Rephrase this in French: Hello world\"}]",
+        "display": "[openai:gpt-3.5-turbo] [{\"role\":\"system\",\"content\":\"Seja extremamente brincalhão e informal.\"},{\"role\":\"user\",\"content\":\"Rephrase this in French: {{body}}\"}]"
+      },
+      "vars": {
+        "body": "Hello world"
+      },
+      "response": {
+        "output": "Salut les potes du monde !",
+        "tokenUsage": {
+          "cached": 39,
+          "total": 39
+        },
+        "cached": true
+      },
+      "success": true,
+      "score": 1,
+      "namedScores": {},
+      "latencyMs": 2,
+      "gradingResult": {
+        "pass": true,
+        "score": 1,
+        "reason": "No assertions",
+        "tokensUsed": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0
+        },
+        "assertion": null
+      }
+    }
+  ],
+  "stats": {
+    "successes": 4,
+    "failures": 0,
+    "tokenUsage": {
+      "total": 152,
+      "prompt": 62,
+      "completion": 14,
+      "cached": 76
+    }
+  },
+  "table": {
+    "head": {
+      "prompts": [
+        {
+          "raw": "[{\"role\":\"system\",\"content\":\"Seja extremamente brincalhão e informal.\"},{\"role\":\"user\",\"content\":\"Rephrase this in French: {{body}}\"}]",
+          "display": "[openai:gpt-4-1106-preview] [{\"role\":\"system\",\"content\":\"Seja extremamente brincalhão e informal.\"},{\"role\":\"user\",\"content\":\"Rephrase this in French: {{body}}\"}]",
+          "id": "cfecae49ee854180dde31630d27b667a100a5f8c758bfb0b6164e93abcff9672",
+          "metrics": {
+            "score": 2,
+            "testPassCount": 2,
+            "testFailCount": 0,
+            "assertPassCount": 0,
+            "assertFailCount": 0,
+            "totalLatencyMs": 1057,
+            "tokenUsage": {
+              "total": 74,
+              "prompt": 31,
+              "completion": 6,
+              "cached": 37
+            },
+            "namedScores": {}
+          }
+        },
+        {
+          "raw": "[{\"role\":\"system\",\"content\":\"Seja extremamente brincalhão e informal.\"},{\"role\":\"user\",\"content\":\"Rephrase this in French: {{body}}\"}]",
+          "display": "[openai:gpt-3.5-turbo] [{\"role\":\"system\",\"content\":\"Seja extremamente brincalhão e informal.\"},{\"role\":\"user\",\"content\":\"Rephrase this in French: {{body}}\"}]",
+          "id": "cfecae49ee854180dde31630d27b667a100a5f8c758bfb0b6164e93abcff9672",
+          "metrics": {
+            "score": 2,
+            "testPassCount": 2,
+            "testFailCount": 0,
+            "assertPassCount": 0,
+            "assertFailCount": 0,
+            "totalLatencyMs": 978,
+            "tokenUsage": {
+              "total": 78,
+              "prompt": 31,
+              "completion": 8,
+              "cached": 39
+            },
+            "namedScores": {}
+          }
+        }
+      ],
+      "vars": [
+        "body"
+      ]
+    },
+    "body": [
+      {
+        "outputs": [
+          {
+            "pass": true,
+            "score": 1,
+            "namedScores": {},
+            "text": "Salut, le monde !",
+            "prompt": "[{\"role\":\"system\",\"content\":\"Seja extremamente brincalhão e informal.\"},{\"role\":\"user\",\"content\":\"Rephrase this in French: Hello world\"}]",
+            "provider": "openai:gpt-4-1106-preview",
+            "latencyMs": 1054,
+            "tokenUsage": {
+              "total": 37,
+              "prompt": 31,
+              "completion": 6
+            },
+            "gradingResult": {
+              "pass": true,
+              "score": 1,
+              "reason": "No assertions",
+              "tokensUsed": {
+                "total": 0,
+                "prompt": 0,
+                "completion": 0
+              },
+              "assertion": null
+            }
+          },
+          {
+            "pass": true,
+            "score": 1,
+            "namedScores": {},
+            "text": "Salut les potes du monde !",
+            "prompt": "[{\"role\":\"system\",\"content\":\"Seja extremamente brincalhão e informal.\"},{\"role\":\"user\",\"content\":\"Rephrase this in French: Hello world\"}]",
+            "provider": "openai:gpt-3.5-turbo",
+            "latencyMs": 976,
+            "tokenUsage": {
+              "total": 39,
+              "prompt": 31,
+              "completion": 8
+            },
+            "gradingResult": {
+              "pass": true,
+              "score": 1,
+              "reason": "No assertions",
+              "tokensUsed": {
+                "total": 0,
+                "prompt": 0,
+                "completion": 0
+              },
+              "assertion": null
+            }
+          }
+        ],
+        "vars": [
+          "Hello world"
+        ]
+      },
+      {
+        "outputs": [
+          {
+            "pass": true,
+            "score": 1,
+            "namedScores": {},
+            "text": "Salut, le monde !",
+            "prompt": "[{\"role\":\"system\",\"content\":\"Seja extremamente brincalhão e informal.\"},{\"role\":\"user\",\"content\":\"Rephrase this in French: Hello world\"}]",
+            "provider": "openai:gpt-4-1106-preview",
+            "latencyMs": 3,
+            "tokenUsage": {
+              "cached": 37,
+              "total": 37
+            },
+            "gradingResult": {
+              "pass": true,
+              "score": 1,
+              "reason": "No assertions",
+              "tokensUsed": {
+                "total": 0,
+                "prompt": 0,
+                "completion": 0
+              },
+              "assertion": null
+            }
+          },
+          {
+            "pass": true,
+            "score": 1,
+            "namedScores": {},
+            "text": "Salut les potes du monde !",
+            "prompt": "[{\"role\":\"system\",\"content\":\"Seja extremamente brincalhão e informal.\"},{\"role\":\"user\",\"content\":\"Rephrase this in French: Hello world\"}]",
+            "provider": "openai:gpt-3.5-turbo",
+            "latencyMs": 2,
+            "tokenUsage": {
+              "cached": 39,
+              "total": 39
+            },
+            "gradingResult": {
+              "pass": true,
+              "score": 1,
+              "reason": "No assertions",
+              "tokensUsed": {
+                "total": 0,
+                "prompt": 0,
+                "completion": 0
+              },
+              "assertion": null
+            }
+          }
+        ],
+        "vars": [
+          "Hello world"
+        ]
+      }
+    ]
+  }
+}

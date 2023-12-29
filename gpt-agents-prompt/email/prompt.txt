@@ -1,0 +1,9 @@
+Gere um e-mail informal para convocação de colaboradores da empresa {{companyName}} a participarem de um evento sobre {{eventName}}.
+
+O e-mail deve conter os seguintes detalhes:
+
+Só serão aceitos colaboradores com o mínino de {{experienceAge}} anos de experiência.
+É obrigatório que venham vestidos de {{clothingName}} para manter o anonimato.
+O vancedor além de receber um prêmio de {{award}}, deverá fazer uma doação de {{donation}} porcento do total recebido.
+
+Escreva uma piada sobre {{joke}} no final da mensagem.

@@ -1,0 +1,349 @@
+{
+  "results": {
+    "version": 2,
+    "results": [
+      {
+        "provider": {
+          "id": "openai:gpt-3.5-turbo"
+        },
+        "prompt": {
+          "raw": "Rephrase this in French: Hello world",
+          "display": "Rephrase this in French: {{body}}"
+        },
+        "vars": {
+          "body": "Hello world"
+        },
+        "response": {
+          "output": "Bonjour le monde",
+          "tokenUsage": {
+            "total": 18,
+            "prompt": 15,
+            "completion": 3
+          },
+          "cached": false
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 970,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "No assertions",
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0
+          },
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:gpt-3.5-turbo"
+        },
+        "prompt": {
+          "raw": "Rephrase this like a pirate: Hello world",
+          "display": "Rephrase this like a pirate: {{body}}"
+        },
+        "vars": {
+          "body": "Hello world"
+        },
+        "response": {
+          "output": "Ahoy, me hearties! Avast ye, world!",
+          "tokenUsage": {
+            "total": 29,
+            "prompt": 16,
+            "completion": 13
+          },
+          "cached": false
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 1049,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "No assertions",
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0
+          },
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:gpt-3.5-turbo"
+        },
+        "prompt": {
+          "raw": "Rephrase this in French: I'm hungry",
+          "display": "Rephrase this in French: {{body}}"
+        },
+        "vars": {
+          "body": "I'm hungry"
+        },
+        "response": {
+          "output": "J'ai faim.",
+          "tokenUsage": {
+            "total": 21,
+            "prompt": 16,
+            "completion": 5
+          },
+          "cached": false
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 935,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "No assertions",
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0
+          },
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:gpt-3.5-turbo"
+        },
+        "prompt": {
+          "raw": "Rephrase this like a pirate: I'm hungry",
+          "display": "Rephrase this like a pirate: {{body}}"
+        },
+        "vars": {
+          "body": "I'm hungry"
+        },
+        "response": {
+          "output": "Arr, me belly be rumblin'!",
+          "tokenUsage": {
+            "total": 27,
+            "prompt": 17,
+            "completion": 10
+          },
+          "cached": false
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 1154,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "No assertions",
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0
+          },
+          "assertion": null
+        }
+      }
+    ],
+    "stats": {
+      "successes": 4,
+      "failures": 0,
+      "tokenUsage": {
+        "total": 95,
+        "prompt": 64,
+        "completion": 31,
+        "cached": 0
+      }
+    },
+    "table": {
+      "head": {
+        "prompts": [
+          {
+            "raw": "Rephrase this in French: {{body}}",
+            "display": "Rephrase this in French: {{body}}",
+            "id": "a67a87b900d7de9c3dd19633b800ebe86b568db68f28d879d0b8a4e41a05e3cc",
+            "metrics": {
+              "score": 2,
+              "testPassCount": 2,
+              "testFailCount": 0,
+              "assertPassCount": 0,
+              "assertFailCount": 0,
+              "totalLatencyMs": 1905,
+              "tokenUsage": {
+                "total": 39,
+                "prompt": 31,
+                "completion": 8,
+                "cached": 0
+              },
+              "namedScores": {}
+            }
+          },
+          {
+            "raw": "Rephrase this like a pirate: {{body}}",
+            "display": "Rephrase this like a pirate: {{body}}",
+            "id": "80aaed6946eaa32040a7fb382921bfc6d2eb5abffbaea8395c194ad2bbad6094",
+            "metrics": {
+              "score": 2,
+              "testPassCount": 2,
+              "testFailCount": 0,
+              "assertPassCount": 0,
+              "assertFailCount": 0,
+              "totalLatencyMs": 2203,
+              "tokenUsage": {
+                "total": 56,
+                "prompt": 33,
+                "completion": 23,
+                "cached": 0
+              },
+              "namedScores": {}
+            }
+          }
+        ],
+        "vars": [
+          "body"
+        ]
+      },
+      "body": [
+        {
+          "outputs": [
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "Bonjour le monde",
+              "prompt": "Rephrase this in French: Hello world",
+              "provider": "openai:gpt-3.5-turbo",
+              "latencyMs": 970,
+              "tokenUsage": {
+                "total": 18,
+                "prompt": 15,
+                "completion": 3
+              },
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "No assertions",
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0
+                },
+                "assertion": null
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "Ahoy, me hearties! Avast ye, world!",
+              "prompt": "Rephrase this like a pirate: Hello world",
+              "provider": "openai:gpt-3.5-turbo",
+              "latencyMs": 1049,
+              "tokenUsage": {
+                "total": 29,
+                "prompt": 16,
+                "completion": 13
+              },
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "No assertions",
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0
+                },
+                "assertion": null
+              }
+            }
+          ],
+          "vars": [
+            "Hello world"
+          ]
+        },
+        {
+          "outputs": [
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "J'ai faim.",
+              "prompt": "Rephrase this in French: I'm hungry",
+              "provider": "openai:gpt-3.5-turbo",
+              "latencyMs": 935,
+              "tokenUsage": {
+                "total": 21,
+                "prompt": 16,
+                "completion": 5
+              },
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "No assertions",
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0
+                },
+                "assertion": null
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "Arr, me belly be rumblin'!",
+              "prompt": "Rephrase this like a pirate: I'm hungry",
+              "provider": "openai:gpt-3.5-turbo",
+              "latencyMs": 1154,
+              "tokenUsage": {
+                "total": 27,
+                "prompt": 17,
+                "completion": 10
+              },
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "No assertions",
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0
+                },
+                "assertion": null
+              }
+            }
+          ],
+          "vars": [
+            "I'm hungry"
+          ]
+        }
+      ]
+    }
+  },
+  "config": {
+    "prompts": [
+      "Rephrase this in French: {{body}}",
+      "Rephrase this like a pirate: {{body}}"
+    ],
+    "providers": [
+      "openai:gpt-3.5-turbo"
+    ],
+    "outputPath": "result-test/result-translate.json",
+    "tests": [
+      {
+        "vars": {
+          "body": "Hello world"
+        }
+      },
+      {
+        "vars": {
+          "body": "I'm hungry"
+        }
+      }
+    ]
+  },
+  "shareableUrl": null
+}

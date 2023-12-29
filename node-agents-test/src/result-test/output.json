@@ -1,0 +1,156 @@
+{
+  "version": 2,
+  "results": [
+    {
+      "provider": {
+        "id": "openai:gpt-3.5-turbo-1106"
+      },
+      "prompt": {
+        "raw": "[{\"role\":\"system\",\"content\":\"Seja extremamente brincalhão e informal.\"},{\"role\":\"user\",\"content\":\"Gere um e-mail informal para convocação de colaboradores da empresa RD Station a participarem de um evento sobre programação. O e-mail deve conter os seguintes detalhes: Só serão aceitos colaboradores com o mínino de 3 anos de experiência. É obrigatório que venham vestidos de máscaras para manter o anonimato. O vancedor além de receber um prêmio de R$ 1.500,00, deverá fazer uma doação de 15 porcento do total recebido. Escreva uma piada sobre programador no final da mensagem.\"}]",
+        "display": "[{\"role\":\"system\",\"content\":\"Seja extremamente brincalhão e informal.\"},{\"role\":\"user\",\"content\":\"Gere um e-mail informal para convocação de colaboradores da empresa {{companyName}} a participarem de um evento sobre {{eventName}}. O e-mail deve conter os seguintes detalhes: Só serão aceitos colaboradores com o mínino de {{experienceAge}} anos de experiência. É obrigatório que venham vestidos de {{clothingName}} para manter o anonimato. O vancedor além de receber um prêmio de {{award}}, deverá fazer uma doação de {{donation}} porcento do total recebido. Escreva uma piada sobre {{joke}} no final da mensagem.\"}]"
+      },
+      "vars": {
+        "eventName": "programação",
+        "companyName": "RD Station",
+        "joke": "programador",
+        "clothingName": "máscaras",
+        "experienceAge": "3",
+        "award": "R$ 1.500,00",
+        "donation": "15"
+      },
+      "response": {
+        "output": "Assunto: Convocação para o Evento de Programação da RD Station\n\nE aí, galera da RD Station!\n\nEstamos convocando todos os programadores com pelo menos 3 anos de experiência para participarem do nosso evento de programação. É hora de mostrar todo o seu talento e habilidade!\n\nLembrando que é obrigatório vir vestido de máscara para manter o anonimato, afinal, quem sabe você não é o próximo vencedor, hein?\n\nAh, falando em vencedor, o sortudo que se destacar vai levar pra casa um prêmio de R$ 1.500,00! Mas, atenção, além de receber essa bolada, o vencedor terá que fazer uma doação de 15% do total recebido. Afinal, é sempre bom espalhar um pouco de amor e generosidade por aí, né?\n\nE pra finalizar, uma piadinha de programador pra descontrair: Por que os programadores odeiam o Natal? Porque sempre recebem um monte de bugs de presente!\n\nEntão, não perca tempo e venha mostrar todo o seu talento no evento de programação da RD Station. Vai ser demais!\n\nAbraços,\n[Seu Nome]",
+        "tokenUsage": {
+          "total": 433,
+          "prompt": 154,
+          "completion": 279
+        },
+        "cached": false
+      },
+      "success": true,
+      "score": 1,
+      "namedScores": {},
+      "latencyMs": 6969,
+      "gradingResult": {
+        "pass": true,
+        "score": 1,
+        "namedScores": {},
+        "reason": "All assertions passed",
+        "tokensUsed": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0
+        },
+        "componentResults": [
+          {
+            "pass": true,
+            "score": 1,
+            "reason": "Output contained substring \"programador\"",
+            "assertion": {
+              "type": "javascript",
+              "value": "(output) => {\n            const pass = output.incl..."
+            }
+          }
+        ],
+        "assertion": null
+      }
+    }
+  ],
+  "stats": {
+    "successes": 1,
+    "failures": 0,
+    "tokenUsage": {
+      "total": 433,
+      "prompt": 154,
+      "completion": 279,
+      "cached": 0
+    }
+  },
+  "table": {
+    "head": {
+      "prompts": [
+        {
+          "raw": "[{\"role\":\"system\",\"content\":\"Seja extremamente brincalhão e informal.\"},{\"role\":\"user\",\"content\":\"Gere um e-mail informal para convocação de colaboradores da empresa {{companyName}} a participarem de um evento sobre {{eventName}}. O e-mail deve conter os seguintes detalhes: Só serão aceitos colaboradores com o mínino de {{experienceAge}} anos de experiência. É obrigatório que venham vestidos de {{clothingName}} para manter o anonimato. O vancedor além de receber um prêmio de {{award}}, deverá fazer uma doação de {{donation}} porcento do total recebido. Escreva uma piada sobre {{joke}} no final da mensagem.\"}]",
+          "display": "[{\"role\":\"system\",\"content\":\"Seja extremamente brincalhão e informal.\"},{\"role\":\"user\",\"content\":\"Gere um e-mail informal para convocação de colaboradores da empresa {{companyName}} a participarem de um evento sobre {{eventName}}. O e-mail deve conter os seguintes detalhes: Só serão aceitos colaboradores com o mínino de {{experienceAge}} anos de experiência. É obrigatório que venham vestidos de {{clothingName}} para manter o anonimato. O vancedor além de receber um prêmio de {{award}}, deverá fazer uma doação de {{donation}} porcento do total recebido. Escreva uma piada sobre {{joke}} no final da mensagem.\"}]",
+          "id": "c6dd4d7abdf9ca9b0afa97e42af4bf835d47097afd63d65b8af04d28a5a3d535",
+          "metrics": {
+            "score": 1,
+            "testPassCount": 1,
+            "testFailCount": 0,
+            "assertPassCount": 1,
+            "assertFailCount": 0,
+            "totalLatencyMs": 6969,
+            "tokenUsage": {
+              "total": 433,
+              "prompt": 154,
+              "completion": 279,
+              "cached": 0
+            },
+            "namedScores": {}
+          }
+        }
+      ],
+      "vars": [
+        "award",
+        "clothingName",
+        "companyName",
+        "donation",
+        "eventName",
+        "experienceAge",
+        "joke"
+      ]
+    },
+    "body": [
+      {
+        "outputs": [
+          {
+            "pass": true,
+            "score": 1,
+            "namedScores": {},
+            "text": "Assunto: Convocação para o Evento de Programação da RD Station\n\nE aí, galera da RD Station!\n\nEstamos convocando todos os programadores com pelo menos 3 anos de experiência para participarem do nosso evento de programação. É hora de mostrar todo o seu talento e habilidade!\n\nLembrando que é obrigatório vir vestido de máscara para manter o anonimato, afinal, quem sabe você não é o próximo vencedor, hein?\n\nAh, falando em vencedor, o sortudo que se destacar vai levar pra casa um prêmio de R$ 1.500,00! Mas, atenção, além de receber essa bolada, o vencedor terá que fazer uma doação de 15% do total recebido. Afinal, é sempre bom espalhar um pouco de amor e generosidade por aí, né?\n\nE pra finalizar, uma piadinha de programador pra descontrair: Por que os programadores odeiam o Natal? Porque sempre recebem um monte de bugs de presente!\n\nEntão, não perca tempo e venha mostrar todo o seu talento no evento de programação da RD Station. Vai ser demais!\n\nAbraços,\n[Seu Nome]",
+            "prompt": "[{\"role\":\"system\",\"content\":\"Seja extremamente brincalhão e informal.\"},{\"role\":\"user\",\"content\":\"Gere um e-mail informal para convocação de colaboradores da empresa RD Station a participarem de um evento sobre programação. O e-mail deve conter os seguintes detalhes: Só serão aceitos colaboradores com o mínino de 3 anos de experiência. É obrigatório que venham vestidos de máscaras para manter o anonimato. O vancedor além de receber um prêmio de R$ 1.500,00, deverá fazer uma doação de 15 porcento do total recebido. Escreva uma piada sobre programador no final da mensagem.\"}]",
+            "provider": "openai:gpt-3.5-turbo-1106",
+            "latencyMs": 6969,
+            "tokenUsage": {
+              "total": 433,
+              "prompt": 154,
+              "completion": 279
+            },
+            "gradingResult": {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "reason": "All assertions passed",
+              "tokensUsed": {
+                "total": 0,
+                "prompt": 0,
+                "completion": 0
+              },
+              "componentResults": [
+                {
+                  "pass": true,
+                  "score": 1,
+                  "reason": "Output contained substring \"programador\"",
+                  "assertion": {
+                    "type": "javascript",
+                    "value": "(output) => {\n            const pass = output.incl..."
+                  }
+                }
+              ],
+              "assertion": null
+            }
+          }
+        ],
+        "vars": [
+          "R$ 1.500,00",
+          "máscaras",
+          "RD Station",
+          "15",
+          "programação",
+          "3",
+          "programador"
+        ]
+      }
+    ]
+  }
+}

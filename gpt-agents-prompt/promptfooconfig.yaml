@@ -1,0 +1,14 @@
+# description: "Tradução de textos"
+# providers: [openai:gpt-4-1106-preview, openai:gpt-3.5-turbo-1106]
+# prompts: translate/prompt.txt
+# outputPath: result-test/result-translation-tests.json
+# tests: translate/test.yaml
+
+description: "Gerar uma e-mail para evento"
+providers: [openai:gpt-4-1106-preview, openai:gpt-3.5-turbo-1106]
+prompts: email/prompt.txt
+tests: email/test.yaml
+outputPath: result-test/result-email-tests.json
+defaultTest:
+  vars:
+    system_message: email/system_prompt.txt
